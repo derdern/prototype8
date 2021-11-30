@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Dish name</h2>
+<img src = "" alt="Selected Food" width="500" height="600">
+<textarea id="nutrition" name="nutrition" rows="4" cols="50">
+    Calories
+    Carbohydrate
+    Protein
+    Fats
+</textarea>
+<textarea id="remaining" name="remaining" rows="4" cols="50">
+    Caloriesmorning
+    Carbohydratemorning
+    Proteinmorning
+    Fatsmorning
+</textarea>
+<input type="submit" value="Submit">
+<h1>{{ text }}</h1>
+{% endblock %}

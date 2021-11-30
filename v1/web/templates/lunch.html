@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center">Lunch Dish</h1>
+<p class="text-center">Recommendation for your lunch dish</p>
+<form method = 'post' action="ok_data">
+    
+
+    <div class="d-grid gap-2">
+        <a href="#" class="btn btn-success btn-lg" tabindex="1" role="button">Shrimp Porridge</a>
+        <a href="#" class="btn btn-success btn-lg" tabindex="/" role="button">Fried Chicken</a>
+        <a href="#" class="btn btn-success btn-lg" tabindex="/" role="button">Spicy Basil Chicken Fried Rice</a>
+ 
+      <a href="#" class="btn btn-primary btn-lg" tabindex="1" role="button">Confirm</a>
+      <a href="{{ url_for('lunch') }}" class="btn btn-primary btn-lg" tabindex="1" role="button">Lunch</a>
+      <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg" tabindex="1" role="button">Main</a>
+    </div>
+    </form>
+{% endblock %}

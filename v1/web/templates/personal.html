@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center">Personal requirement</h1>
+
+
+
+
+<div class="input-group mb-3">
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+  </div>
+
+  
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Hemoglobin</span>
+    <input type="text" class="form-control" placeholder="Status of Hemoglobin">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Hematocrit</span>
+    <input type="text" class="form-control" placeholder="Status of Hematocrit">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Triglyceride</span>
+    <input type="text" class="form-control" placeholder="Status of Triglyceride">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">HDL</span>
+    <input type="text" class="form-control" placeholder="Status of HDL">
+  </div>
+
+  <div class="d-grid gap-2">
+    
+    <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg" tabindex="1" role="button">Main</a>
+  </div>
+  
+{% endblock %}

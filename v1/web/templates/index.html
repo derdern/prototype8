@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+        <div class="d-grid gap-2">
+      
+      
+      <a href="{{ url_for('add_data') }}" class="btn btn-primary btn-lg" tabindex="1" role="button">Add Data</a>
+      <a href="{{ url_for('personal') }}" class="btn btn-primary btn-lg" tabindex="2" role="button">Personal</a>
+      <a href="{{ url_for('morning') }}" class="btn btn-primary btn-lg" tabindex="1" role="button">Morning</a>
+      <a href="{{ url_for('lunch') }}" class="btn btn-primary btn-lg" tabindex="2" role="button">Lunch</a>
+      <a href="{{ url_for('dinner') }}" class="btn btn-primary btn-lg" tabindex="1" role="button">Dinner</a>
+      
+    
+      </div>
+    </div>
+    
+    </body>
+{% endblock %}
