@@ -23,7 +23,7 @@ conn = engine.connect()
 result = conn.execute(ins)
 ins.bind = engine
 print(result.inserted_primary_key)
-cd1
+
 
 
                                          
